@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pack</title>
+	<link rel="stylesheet" type="text/css" href="Pack.css">
+
+	<body>
+		<div class="columns" id="c1">
+  <ul class="price">
+    <li class="header">Lite</li>
+    <li class="grey">$ 10 / month</li>
+    <li class="main-li">3 месяца обучения</li>
+    <li class="main-li">Только теория</li>
+    <li  class="main-li">Учёба из дома либо из нашего офиса</li>
+    <li class="main-li">+подарок</li>
+    <li id="grey1"><button type="submit" class="submit-btn" onclick="Подписаться()"><span>Подписаться</span></button></li>
+  </ul>
+</div> 
+	<div class="columns" id="c2">
+  <ul class="price">
+    <li class="header">Standart</li>
+    <li class="grey">$ 19.99 / month</li>
+    <li class="main-li">6 месяцев обучения</li>
+    <li class="main-li">Теория+ практика</li>
+    <li class="main-li">+Услуги из лайта</li>
+    <li class="main-li">+ подарок</li>
+    <li id="gre2"><button type="button" class="submit-btn" onclick="Подписаться1()"><span>Подписаться</span></button></li>
+  </ul>
+</div> 
+	<div class="columns" id="c3">
+  <ul class="price">
+    <li class="header">Premium</li>
+    <li class="grey">$ 29.99 / month</li>
+    <li class="main-li">9 месяцев обучения</li>
+    <li class="main-li">Теория + практика </li>
+    <li class="main-li">В конце проект на сборку ПК</li>
+    <li class="main-li">+подарок</li>
+    <li id="grey3"><button type="submit" class="submit-btn" onclick="Подписаться2()"><span>Подписаться</span></button></li>
+  </ul>
+</div> 
+<script>
+	var Subscribe = document.getElementById("grey1");
+	function Подписаться(){
+	grey1.innerHTML  = '<p>*Вы не авторизованы</p><input type="button" class="avto" value="Авторизоваться" onClick=location.href="Login.html" />';
+	}
+	var Subscribe1 = document.getElementById("gre2");
+	function Подписаться1(){
+	gre2.innerHTML  = '<p>*Вы не авторизованы</p> <input type="button" class="avto" value="Авторизоваться" onClick=location.href="Login.html" />';
+	}
+	var Subscribe2 = document.getElementById("grey3");
+	function Подписаться2(){
+	grey3.innerHTML  = '<p>*Вы не авторизованы</p> <input type="button" class="avto" value="Авторизоваться" onClick=location.href="Login.html" />';
+	}
+</script>
+
+	</body>
+</html>
